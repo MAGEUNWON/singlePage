@@ -8,6 +8,10 @@ export default class{
   }
   // 페이지 타이틀
 
+  // async (){
+  //   return"";
+  // }
+
   async getHtml(){
     return"";
   }

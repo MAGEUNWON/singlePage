@@ -55,6 +55,7 @@ const router = async () => {
   const view = new match.route.view();
   // 활성화된 view 담기
 
+  // document.querySelector('#app').innerHTML= await view.getJs();
   document.querySelector('#app').innerHTML = await view.getHtml();
   // #app 엘리먼트에 활성화된 view의 html 삽입
 

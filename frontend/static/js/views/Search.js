@@ -1,4 +1,9 @@
 import AbstractView from "./AbstractView.js";
+// import Search from "../jsScript/allMoviePage.js";
+import "../../css/search.css";
+
+
+
 
 export default class extends AbstractView{
   constructor(){
@@ -8,12 +13,25 @@ export default class extends AbstractView{
   }
   // 서브클래스
 
+
   async getHtml(){
     return `
-        <h1>검색 화면</h1>
-        <a href = "/" data-link>
-            메인으로 가기
-        </a>
+    <main id = "main">
+      
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div>
+      <div></div>
+    </div>
+
+  </main>
     `;
   }
   // 메서드 오버라이딩

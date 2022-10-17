@@ -1,5 +1,6 @@
 import AbstractView from "./AbstractView.js";
 
+
 export default class extends AbstractView{
   constructor(){
     super();
@@ -7,6 +8,8 @@ export default class extends AbstractView{
     // this는 생성된 인스턴스를 가리킴. super가 반환한 인스턴스가 this에 바인딩 됨.
   }
   // 서브클래스
+
+
 
   async getHtml(){
     return `
