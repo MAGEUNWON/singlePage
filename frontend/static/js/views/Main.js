@@ -3,18 +3,14 @@ import AbstractView from "./AbstractView.js";
 export default class extends AbstractView{
   constructor(){
     super();
-    this.setTitle("Dashboard");
+    this.setTitle("Main");
     // this는 생성된 인스턴스를 가리킴. super가 반환한 인스턴스가 this에 바인딩 됨.
   }
   // 서브클래스
 
   async getHtml(){
     return `
-        <h1>Welcome!</h1>
-        <p>This is Dashboard page.</p>
-        <a href = "/posts" data-link>
-            View recent posts
-        </a>
+        <h1>메인 화면 넣기</h1>
     `;
   }
   // 메서드 오버라이딩

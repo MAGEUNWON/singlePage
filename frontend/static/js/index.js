@@ -1,7 +1,9 @@
-import Dashboard from "./views/Dashboard.js";
-import Posts from "./views/Posts.js";
+import Main from "./views/Main.js";
+import Mypage from "./views/Mypage.js";
+import Fourm from "./views/Fourm.js";
 import Settings from "./views/Settings.js";
 import NotFound from "./views/NotFound.js";
+import Search from "./views/Search.js";
 
 const navigateTo = url=>{
   history.pushState(null,null,url);
@@ -18,8 +20,10 @@ const router = async () => {
     // {path:"/settings", view:()=>console.log("Viewing Settings")},
     // {path:"/404", view:()=>console.log("Not Found")}
     // 각 route의 경로와 현재 페이지 확인용 콘솔
-    {path: "/", view : Dashboard},
-    {path: "/posts", view : Posts},
+    {path: "/", view : Main},
+    {path: "/Search", view : Search},
+    {path: "/Fourm", view : Fourm},
+    {path: "/Mypage", view : Mypage},
     {path: "/settings", view : Settings},
     {path: "/404", view : NotFound},
     // view 변경
